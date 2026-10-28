@@ -1,0 +1,82 @@
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+@media (max-width: 800px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.ticket-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.card h3 {
+  margin: 0;
+}
+
+.muted {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.analysis {
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px dashed #ccc;
+}
+
+.tag {
+  display: inline-block;
+  margin-right: 0.5rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  background: #eee;
+  color: #333;
+  font-size: 0.8rem;
+}
+
+.priority-high {
+  background: #fdd;
+}
+
+.chat .messages {
+  min-height: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.message {
+  white-space: pre-wrap;
+}
+
+.message.user {
+  font-weight: 600;
+}
+
+.chat form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.chat input {
+  flex: 1;
+  padding: 0.5rem;
+}

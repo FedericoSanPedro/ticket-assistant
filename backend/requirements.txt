@@ -1,0 +1,7 @@
+fastapi
+uvicorn[standard]
+anthropic
+ollama
+pydantic
+pytest
+httpx
